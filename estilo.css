@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+}
+
+img{
+  border-color: black rgb(255, 255, 255) rgb(0, 0, 0);
+  border-width: 10px;
+  border-style: solid;
+  box-shadow:0 0 10px rgb(0, 102, 255); 
+}
+
+h1{
+  background: linear-gradient(rgb(255, 255, 255),rgb(49, 49, 49));
+  -webkit-background-clip: text;
+  color: transparent; 
+  border-top: black 5px dashed;
+  border-left: rgb(0, 123, 255) 5px solid; 
+}
+
+#tablero {
+    text-align: center;
+    width: 100%;
+}
+
+#tablero>div {
+  width: calc((100%) / 5);
+  height: 192px;
+  display: inline-block;
+  margin: 2%;
+  cursor: pointer;
+  transition: transform ease .3s;
+}
+#tablero>div:hover {
+  transform: scale(1.2);
+}
+
+.abrir img {
+display: inline-block;
+}
+
+.tarjeta {
+  display: none;
+  width: 100%;
+
+}
+
+.tarjetas {
+  width: 100%;
+  border: 1px solid;
+  box-shadow:0 0 10px rgb(0, 102, 255); 
+}
